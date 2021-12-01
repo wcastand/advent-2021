@@ -7,5 +7,5 @@ Testing Deno
 # Run
 
 ```bash
-deno test
+deno test --allow-read
 ```
