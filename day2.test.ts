@@ -47,7 +47,7 @@ function parse2(input: [string, number][]) {
   return pos[0] * pos[1];
 }
 
-Deno.test("Examples", () => {
+Deno.test("Day2", () => {
   const test = `forward 5
   down 5
   forward 8
@@ -64,15 +64,17 @@ Deno.test("Examples", () => {
 
   const res2 = parse2(arr);
   assertEquals(res2, 900);
-});
 
-Deno.test("Part 1:", () => {
-  const res = parse1(input);
-  assert(res);
-  console.log(res);
-});
-Deno.test("Part 2:", () => {
-  const res = parse2(input);
-  assert(res);
-  console.log(res);
+  // clear
+  console.log();
+
+  // part 1
+  const part1 = parse1(input);
+  assert(part1);
+  console.log("Part 1: ", part1);
+
+  // part 2
+  const part2 = parse2(input);
+  assert(part2);
+  console.log("Part 2: ", part2);
 });
